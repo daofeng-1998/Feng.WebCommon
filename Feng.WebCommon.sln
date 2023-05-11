@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Feng.WebCommon", "Feng.WebCommon\Feng.WebCommon.csproj", "{EC5541C7-60B5-4586-8362-581E5F62D7ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCommonTest", "WebCommonTest\WebCommonTest.csproj", "{9E460F90-8C5C-40DB-9B37-067AB8F1B356}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC5541C7-60B5-4586-8362-581E5F62D7ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5541C7-60B5-4586-8362-581E5F62D7ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5541C7-60B5-4586-8362-581E5F62D7ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5541C7-60B5-4586-8362-581E5F62D7ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E460F90-8C5C-40DB-9B37-067AB8F1B356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E460F90-8C5C-40DB-9B37-067AB8F1B356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E460F90-8C5C-40DB-9B37-067AB8F1B356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E460F90-8C5C-40DB-9B37-067AB8F1B356}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
