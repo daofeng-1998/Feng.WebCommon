@@ -2,81 +2,81 @@
 
 namespace Feng.WebCommon.Models; 
 
-public class Response {
-    public ResponseCode Code { get; set; }
+public class Result {
+    public ResultCode Code { get; set; }
 
     public string? Message { get; set; }
 
     public object? Data { get; set; }
 
-    public static Response Unknown(
+    public static Result Unknown(
         string? msg = "未知错误",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.Unknown,
+        return new Result {
+            Code = ResultCode.Unknown,
             Message = msg,
             Data = data,
         };
     }
 
-    public static Response NoLogin(string message = "登录已过期") {
-        return new Response {
-            Code = ResponseCode.NoLogin,
+    public static Result NoLogin(string message = "登录已过期") {
+        return new Result {
+            Code = ResultCode.NoLogin,
             Message = message
         };
     }
 
-    public static Response Success(
+    public static Result Success(
         string? msg = "成功",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.Success,
+        return new Result {
+            Code = ResultCode.Success,
             Message = msg,
             Data = data,
         };
     }
 
-    public static Response Forbidden(
+    public static Result Forbidden(
         string? msg = "无操作权限",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.Forbidden,
+        return new Result {
+            Code = ResultCode.Forbidden,
             Message = msg,
             Data = data,
         };
     }
 
-    public static Response DataError(
+    public static Result DataError(
         string? msg = "提交的数据无法处理",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.DataError,
+        return new Result {
+            Code = ResultCode.DataError,
             Message = msg,
             Data = data,
         };
     }
 
-    public static Response NotFound(
+    public static Result NotFound(
         string? msg = "请求的资源不存在",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.NotFound,
+        return new Result {
+            Code = ResultCode.NotFound,
             Message = msg,
             Data = data,
         };
     }
 
-    public static Response Error(
+    public static Result Error(
         string? msg = "操作失败",
         object? data = null
     ) {
-        return new Response {
-            Code = ResponseCode.Error,
+        return new Result {
+            Code = ResultCode.Error,
             Message = msg,
             Data = data
         };

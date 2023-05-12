@@ -1,6 +1,6 @@
 ﻿namespace Feng.WebCommon.Enums;
 
-public enum ResponseCode {
+public enum ResultCode {
     /// <summary>
     /// 未知错误
     /// </summary>
@@ -19,20 +19,20 @@ public enum ResponseCode {
     /// <summary>
     /// 无操作权限
     /// </summary>
-    Forbidden = 400,
+    Forbidden = 500,
 
     /// <summary>
     /// 提交的数据无法处理
     /// </summary>
-    DataError = 401,
+    DataError = 501,
 
     /// <summary>
     /// 请求的资源不存在
     /// </summary>
-    NotFound = 404,
+    NotFound = 502,
 
     /// <summary>
     /// 操作发生错误
     /// </summary>
-    Error = 500
+    Error = 503
 }
